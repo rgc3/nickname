@@ -1,0 +1,19 @@
+<!-- Nickname submit form -->
+<div class="well well-lg">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Nickname">
+        <span class="input-group-btn">
+          <button class="btn btn-success" type="button">Submit</button>
+        </span>
+      </div><!-- /input-group -->
+    </div><!-- /.col-xs-12 -->
+  </div><!-- /.row -->
+</div>
+<br />
+
+<%= form_for(@nickname)  do |f| %>
+  <%= f.text_field :n_name, placeholder: "Nickname" %>
+  <%= f.submit %>
+<% end %>

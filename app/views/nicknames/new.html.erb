@@ -4,26 +4,15 @@
   Robert has been known by many nicknames over his lifetime. Are you acquainted with Robert? What is a nickname you have known him as?
 </p>
 
-<!-- Nickname submit form -->
-<div class="well well-lg">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="input-group input-group-lg">
-        <input type="text" class="form-control" placeholder="Nickname">
-        <span class="input-group-btn">
-          <button class="btn btn-success" type="button">Submit</button>
-        </span>
-      </div><!-- /input-group -->
-    </div><!-- /.col-xs-12 -->
-  </div><!-- /.row -->
-</div>
-
-
-<br />
+<%= render 'form' %>
 
 <!-- - Placeholder - nicknames listed -->
 <div class="panel panel-default">
   <div class="panel-body">
-    nickname list placeholer
+    nickname list placeholder
+    <% @nicknames.each do |name| %>
+    <%= name.n_name %>
+    <% end %>
+
   </div>
 </div>
