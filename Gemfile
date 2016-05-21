@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass-rails'
+gem 'bootstrap_form'
 
 group :development, :test do
   gem 'byebug'
