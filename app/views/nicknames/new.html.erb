@@ -1,18 +1,22 @@
-<h1>Nickname App</h1>
-<h3>Robert/Bob/Bobby/Rob Cunningham</h3>
-<p>
-  Robert has been known by many nicknames over his lifetime. Are you acquainted with Robert? What is a nickname you have known him as?
-</p>
-
-<%= render 'form' %>
-
-<!-- - Placeholder - nicknames listed -->
-<div class="panel panel-default">
+<div class="panel panel-default main">
   <div class="panel-body">
-    nickname list placeholder
-    <% @nicknames.each do |name| %>
-    <%= name.n_name %>
-    <% end %>
+
+    <h1>Robert "<small>Random n_name</small>" Cunningham</h1>
+    <h3>A.K.A. Rob, Bob & Bobby</h3>
+    <p>
+      Robert has had many nicknames. Do you know Robert? Add a nickname you have known him by.
+    </p>
+
+    <%= render 'form' %>
+
+    <!-- nicknames listed -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <% @nicknames.each do |name| %>
+        <%= name.n_name %>,
+        <% end %>
+      </div>
+    </div>
 
   </div>
 </div>

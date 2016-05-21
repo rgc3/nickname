@@ -2,18 +2,29 @@
 <div class="well well-lg">
   <div class="row">
     <div class="col-xs-12">
-      <div class="input-group input-group-lg">
-        <input type="text" class="form-control" placeholder="Nickname">
+      <%= bootstrap_form_for(@nickname) do |f| %>
+      <div class="input-group input-group">
+        <%= f.text_field :n_name, hide_label: true, placeholder: "Add a nickname for Robert" %>
         <span class="input-group-btn">
-          <button class="btn btn-success" type="button">Submit</button>
+          <%= f.submit "Submit", class: "btn btn-success" %>
         </span>
+        <% end %>
       </div><!-- /input-group -->
     </div><!-- /.col-xs-12 -->
   </div><!-- /.row -->
 </div>
 <br />
 
-<%= form_for(@nickname)  do |f| %>
+<!-- <%= form_for(@nickname)  do |f| %>
   <%= f.text_field :n_name, placeholder: "Nickname" %>
   <%= f.submit %>
 <% end %>
+
+<br /><br />
+
+<%= bootstrap_form_for(@nickname) do |f| %>
+  <%= f.text_field :n_name, hide_label: true, placeholder: "Nickname" %>
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>
+
+<br /><br /> -->
