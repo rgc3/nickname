@@ -1,7 +1,7 @@
 <div class="panel panel-default main">
-  <div class="panel-body">
+  <div class="panel-body dzo">
 
-    <h1>Robert "<small>Random n_name</small>" Cunningham</h1>
+    <h1>Robert Cunningham</h1>
     <h3>A.K.A. Rob, Bob & Bobby</h3>
     <p>
       Robert has had many nicknames. Do you know Robert? Add a nickname you have known him by.
@@ -10,10 +10,10 @@
     <%= render 'form' %>
 
     <!-- nicknames listed -->
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="panel panel-default list">
+      <div class="panel-body names">
         <% @nicknames.each do |name| %>
-        <%= name.n_name %>,
+        <%= name.n_name %> -
         <% end %>
       </div>
     </div>
